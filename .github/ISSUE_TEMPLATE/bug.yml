@@ -1,0 +1,16 @@
+name: Something is broken
+description: A bug, a crash, or GovernCode doing something it shouldn't.
+labels: [bug]
+body:
+  - type: textarea
+    attributes: {label: What happened, description: What you did and what you saw.}
+    validations: {required: true}
+  - type: textarea
+    attributes: {label: What you expected}
+    validations: {required: true}
+  - type: input
+    attributes: {label: Version or commit, placeholder: "gov status, or the commit you built"}
+  - type: input
+    attributes: {label: Operating system and kernel, placeholder: "e.g. Arch Linux, kernel 6.12"}
+  - type: textarea
+    attributes: {label: Logs, description: "Anything useful from govd.log or the terminal. Remove anything private first.", render: text}

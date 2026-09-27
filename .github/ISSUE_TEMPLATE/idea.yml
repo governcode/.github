@@ -1,0 +1,9 @@
+name: An idea
+description: A feature, a change, or a better way to do something.
+labels: [idea]
+body:
+  - type: textarea
+    attributes: {label: The problem, description: What gets in your way today?}
+    validations: {required: true}
+  - type: textarea
+    attributes: {label: Your idea, description: How you'd like it to work. Rough is fine.}
